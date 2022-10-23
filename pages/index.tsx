@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import {IconContext} from 'react-icons'
+import {FaTwitter, FaGithub, FaInstagram, FaLinkedinIn, FaMediumM}  from 'react-icons/fa'
 
 const Home: NextPage = () => {
   return (
@@ -28,8 +30,20 @@ const Home: NextPage = () => {
           <div id="main" className="text-center p-10">
              <p className="text-md py-5 text-white font-medium text-start">Hi there! My name is</p>
             <h2 className="text-5xl py-5 text-lime-400 font-medium text-start"> Mbuyu Makayi</h2>
-            <p className="text-md py-5 text-white font-medium text-start ">I am a Backend Software Engineer, Tech Community Builder, <br></br>currently building stuff to get the next billion of Africans financially included.</p>
+            <p className="text-md py-5 text-white font-medium text-start ">
+              I am a Backend Software Engineer, Tech Community Builder, <br></br>currently building stuff to get the next billion of Africans financially included.
+              </p>
             <h3 className="text-3xl text-lime-400 text-start py-5">See more about me</h3>
+          </div>
+
+          <div className="text-3xl flex justify-start gap-16 py-3 px-8">
+           <IconContext.Provider value={{color:"white"}}>
+           <FaTwitter/>
+           <FaGithub/>
+           <FaInstagram/>
+           <FaMediumM/>
+           <FaLinkedinIn/>
+           </IconContext.Provider>
           </div>
         </section>
       </main>
