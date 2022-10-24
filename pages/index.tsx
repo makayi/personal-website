@@ -38,11 +38,11 @@ const Home: NextPage = () => {
 
           <div className="text-3xl flex justify-start gap-16 py-3 px-8">
            <IconContext.Provider value={{color:"white"}}>
-           <FaTwitter/>
-           <FaGithub/>
-           <FaInstagram/>
-           <FaMediumM/>
-           <FaLinkedinIn/>
+           <a href="https://www.twitter.com/mbuyu_"><FaTwitter/></a>
+           <a href="https://github.com/makayi"><FaGithub/></a>
+           <a href="https://www.instagram.com/mbuyu__/"><FaInstagram/></a>
+           <a href="https://medium.com/@mbuyu"> <FaMediumM/></a>
+           <a href="https://www.linkedin.com/in/mbuyu/"><FaLinkedinIn/></a>
            </IconContext.Provider>
           </div>
         </section>
